@@ -9,16 +9,41 @@ body{
   border-top-right-radius: 10px;
 }
 #titulo{
-  text-align: left;
+  text-align: center;
   color: white;
   text-shadow: 2px #02010a;
 }
 #menu{
+  text-align: center;
+  font-size: 20px;
+}
+@media (min-width:900px){#titulo{
+  text-align: left;
+  color: white;
+  text-shadow: 2px #02010a;
+}
+}
+@media (min-width:900px){#menu{
   text-align: right;
+}
 }
 .opcion {
   text-decoration: none;
   color: white;
+}
+.cabecera{
+  animation: swipe_up 2s;
+}
+@-webkit-keyframes swipe_up{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
 }
 /*Cuerpo de la página*/
 #imagen_central{
@@ -35,7 +60,7 @@ body{
 .img2, .img3 {
 width: 100%;
 }
-@media (min-width: 800px) {
+@media (min-width: 900px) {
 .img2, .img3 {
 width: 50%;
 }
@@ -58,6 +83,10 @@ width: 50%;
   -webkit-transform: translate(20px,-5px);
   box-shadow: 2px 2px #82c3a6;
 }
+figcaption{
+  font-size: 30px;
+  text-decoration: underline;
+}
 /*Pie de Página*/
 footer{
   background: #C6d5c5
@@ -78,4 +107,69 @@ width: 25%;
 }
 .redes img{
   height: 30px;
+}
+/*Sección de Paisaje*/
+.seccion_p{
+  text-align: center;
+  background: #D5C75F;
+  border: 1px;
+}
+.seccion_p{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+.ima1, .ima2, .ima3, .ima4, .ima5, .ima6 {
+width: 100%;
+}
+@media (min-width: 900px) {
+.ima1, .ima2, .ima3, .ima4, .ima5, .ima6 {
+width: 33%;
+}
+}
+.ima1 img{
+  -webkit-filter: blur(10px);
+  filter:blur(10px);
+}
+.seccion_p div:nth-child(even){
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.ima3 img{
+  -webkit-filter:sepia(90%);
+  filter:sepia(90%);
+}
+
+/*Sección de Retratos*/
+.seccion_r{
+  text-align: center;
+  background: #D5C75F;
+  border: 1px;
+}
+.seccion_r{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+.imr1, .imr2, .imr3, .imr4, .imr5, .imr6 {
+width: 100%;
+}
+@media (min-width: 900px) {
+.imr1, .imr2, .imr3, .imr4, .imr5, .imr6 {
+width: 33%;
+}
+}
+.imr1 img{
+  -webkit-filter: blur(10px);
+  filter:blur(10px);
+}
+.seccion_r div:nth-child(even){
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.imr3 img{
+  -webkit-filter:sepia(90%);
+  filter:sepia(90%);
 }
