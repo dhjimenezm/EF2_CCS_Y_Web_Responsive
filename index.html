@@ -5,6 +5,7 @@
     <title></title>
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0">
     <link rel="stylesheet" href="estilos/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -21,16 +22,25 @@
     </header>
     <section id="principal">
       <div id="imagen_central">
-        <img src="imagenes/imagen1.png">
+        <picture>
+          <source srcset="imagenes/imagen1_r1.png" media="(max-width: 900px)" class="img1_efect">
+          <img src="imagenes/imagen1.png" class="img1_efect">
+        </picture>
       </div>
     </section>
     <section id="parte2">
       <div class="secundaria">
         <div class="img2">
-          <img src="imagenes/imagen2.png">
+          <picture>
+            <source srcset="imagenes/imagen2_r1.png" media="(max-width: 900px)" class="img2_efect">
+            <img src="imagenes/imagen2.png" class="img2_efect"/>
+          </picture>
         </div>
         <div class="img3">
-          <img src="imagenes/imagen3.png"">
+          <picture>
+            <source srcset="imagenes/imagen3_r1.png" media="(max-width: 900px)" class="img3_efect">
+            <img src="imagenes/imagen3.png" class="img3_efect">
+          </picture>
         </div>
       </div>
     </section>
@@ -53,8 +63,7 @@
           <a href="https://www.linkedin.com/in/diego-jim%C3%A9nez-moreno-9b9a58b7/"><img src="imagenes/linkedin.png" ></a>
         </div>
         <div class="autor">Términos
-          <br><p>Diego Jiménez</p>
-          <p>2019</p>
+          <br><p>© Diego Jiménez - 2019</p>
         </div>
       </div>
     </footer>

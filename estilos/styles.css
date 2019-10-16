@@ -1,3 +1,7 @@
+body{
+  font-family: 'Dancing Script';
+  background: black;
+}
 /*Cabecera de la página*/
 .cabecera{
   background: #5B7989;
@@ -41,12 +45,15 @@ width: 50%;
   background: #D5C75F;
   border: 1px;
 }
-.img2:hover{
+.img1_efect, .img2_efect, .img3_efect{
+  box-shadow: 2px 2px #02010a;
+}
+.img2_efect:hover{
   transform: rotate(10deg);
   -webkit-transform: rotate(10deg);
   box-shadow: 2px 2px #82c3a6;
 }
-.img3:hover{
+.img3_efect:hover{
   transform: translate(20px,-5px);
   -webkit-transform: translate(20px,-5px);
   box-shadow: 2px 2px #82c3a6;
@@ -68,4 +75,7 @@ width: 100%;
 .contacto, .politicas, .redes, .autor {
 width: 25%;
 }
+}
+.redes img{
+  height: 30px;
 }
